@@ -85,7 +85,6 @@ table[id="first-table"] {
 }
 
 td {
-    border: 5px solid var(--main-blue);
     border-radius: 5px;
 }
 
@@ -96,4 +95,38 @@ td div {
 td div img {
     max-height: 100%;
     max-width: 100%;
+}
+
+.cube {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.cube:hover {
+    transform: rotateX(90deg);
+}
+
+.face-1, .face-2 {
+    backface-visibility: hidden;
+    border: 5px solid var(--main-blue);
+    width: 601px;
+    height: 338px;
+}
+
+.face-2 * {
+    text-align: center;
+    color: rgba(158,164,168,0.97);
+    text-transform: uppercase;
+}
+
+.face-2 {
+    transform: rotateX(-90deg) translateZ(-100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face-1 {
+    transform: translateZ(100px);
 }
