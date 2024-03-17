@@ -130,3 +130,9 @@ td div img {
 .face-1 {
     transform: translateZ(100px);
 }
+
+.face-2 h1 {
+    background: linear-gradient(blue, blueviolet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
