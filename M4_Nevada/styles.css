@@ -21,6 +21,10 @@ span {
     color: var(--main-blue);
 }
 
+canvas {
+    border: 1px solid red;
+}
+
 @keyframes open-side-menu-animation {
     from {
         height: 10px;
@@ -98,13 +102,28 @@ td div img {
 }
 
 .cube {
+    animation: loop-rotate 3s infinite;
     position: relative;
     transform-style: preserve-3d;
     transition: .5s;
 }
 
+/*
 .cube:hover {
     transform: rotateX(90deg);
+}
+ */
+
+@keyframes loop-rotate {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
 }
 
 .face-1, .face-2 {
