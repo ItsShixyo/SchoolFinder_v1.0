@@ -93,7 +93,7 @@ td {
 }
 
 td div {
-
+    border: 5px solid var(--main-blue);
 }
 
 td div img {
@@ -102,15 +102,17 @@ td div img {
 }
 
 .cube {
-    position: relative;
+    /*position: relative;*/
     transform-style: preserve-3d;
-    transition: .5s;
+    transition: 2s;
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid var(--main-blue);
 }
 
-
 .cube:hover {
-    /*transform: rotateX(90deg);*/
-    animation: loop-rotate 3s infinite;
+    transform: rotateX(90deg);
+    /*animation: loop-rotate 3s infinite;*/
 }
 
 @keyframes loop-rotate {
@@ -128,8 +130,13 @@ td div img {
 .face-1, .face-2 {
     backface-visibility: hidden;
     border: 5px solid var(--main-blue);
-    width: 601px;
-    height: 338px;
+    background-color: var(--main-background-color);
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .face-2 * {
@@ -139,14 +146,14 @@ td div img {
 }
 
 .face-2 {
-    transform: rotateX(-90deg) translateZ(-100px);
+    transform: rotateX(-90deg) translateZ(-45vh);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .face-1 {
-    transform: translateZ(100px);
+    transform: translateZ(45vh);
 }
 
 .face-2 h1 {
