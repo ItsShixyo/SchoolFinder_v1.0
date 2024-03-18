@@ -139,6 +139,11 @@ td div img {
     justify-content: center;
 }
 
+.face-1 img, .face-2 img {
+    width: 100%;
+    height: 100%;
+}
+
 .face-2 * {
     text-align: center;
     color: rgba(158,164,168,0.97);
