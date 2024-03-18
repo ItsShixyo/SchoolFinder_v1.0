@@ -1,3 +1,4 @@
+/*
 const canvas = document.getElementById("canvas");
 const gl = canvas.getContext("webgl");
 
@@ -103,3 +104,5 @@ let animate = function (time) {
     window.requestAnimationFrame(animate);
 }
 animate(0);
+
+ */

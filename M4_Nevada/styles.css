@@ -102,17 +102,16 @@ td div img {
 }
 
 .cube {
-    animation: loop-rotate 3s infinite;
     position: relative;
     transform-style: preserve-3d;
     transition: .5s;
 }
 
-/*
+
 .cube:hover {
-    transform: rotateX(90deg);
+    /*transform: rotateX(90deg);*/
+    animation: loop-rotate 3s infinite;
 }
- */
 
 @keyframes loop-rotate {
     0% {
