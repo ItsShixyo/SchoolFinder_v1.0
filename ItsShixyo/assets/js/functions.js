@@ -38,11 +38,11 @@ document.ready(function () {
 
         if (!((this).hasClass('is-active'))) {
 
-            let $this = $(this),
-                curActive = $this.parent().find('.is-active'),
-                curPos = $this.parent().children().index(curActive),
-                nextPos = $this.parent().children().index($this),
-                lastItem = $(this).parent().children().length - 1;
+            let $this = (this),
+                curActive = this.parent().find('.is-active'),
+                curPos = this.parent().children().index(curActive),
+                nextPos = this.parent().children().index(this),
+                lastItem = (this).parent().children().length - 1;
 
             updateNavs(nextPos);
             updateContent(curPos, nextPos, lastItem);
