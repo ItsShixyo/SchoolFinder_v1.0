@@ -68,7 +68,7 @@ const openNav = () => {
             const siteRedirection = document.createElement("a");
             siteRedirection.innerHTML = item.title;
             siteRedirection.href = item.redirect;
-            siteRedirection.target = "_blank";
+            siteRedirection.target = "_blank"; // New tab
 
             itemDiv.appendChild(siteRedirection);
             container.appendChild(itemDiv);
