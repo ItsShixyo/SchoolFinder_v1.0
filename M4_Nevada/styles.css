@@ -166,3 +166,7 @@ td div img {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.face-2 h2 {
+    color: var(--main-blue);
+}
