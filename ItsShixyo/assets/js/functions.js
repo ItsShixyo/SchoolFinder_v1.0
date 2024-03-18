@@ -36,7 +36,7 @@ document.ready(function () {
 
     ('.side-nav li, .outer-nav li').click(function () {
 
-        if (!($(this).hasClass('is-active'))) {
+        if (!((this).hasClass('is-active'))) {
 
             let $this = $(this),
                 curActive = $this.parent().find('.is-active'),
@@ -53,9 +53,9 @@ document.ready(function () {
 
     ('.cta').click(function () {
 
-        let curActive = $('.side-nav').find('.is-active'),
-            curPos = $('.side-nav').children().index(curActive),
-            lastItem = $('.side-nav').children().length - 1,
+        let curActive = ('.side-nav').find('.is-active'),
+            curPos = ('.side-nav').children().index(curActive),
+            lastItem = ('.side-nav').children().length - 1,
             nextPos = lastItem;
 
         updateNavs(lastItem);
@@ -75,7 +75,7 @@ document.ready(function () {
 
     (document).keyup(function (e) {
 
-        if (!($('.outer-nav').hasClass('is-vis'))) {
+        if (!(('.outer-nav').hasClass('is-vis'))) {
             e.preventDefault();
             updateHelper(e);
         }
@@ -85,9 +85,9 @@ document.ready(function () {
     // determine scroll, swipe, and arrow key direction
     function updateHelper(param) {
 
-        let curActive = $('.side-nav').find('.is-active'),
-            curPos = $('.side-nav').children().index(curActive),
-            lastItem = $('.side-nav').children().length - 1,
+        let curActive = ('.side-nav').find('.is-active'),
+            curPos = ('.side-nav').children().index(curActive),
+            lastItem = ('.side-nav').children().length - 1,
             nextPos = 0;
 
         if (param.type === "swipeup" || param.keyCode === 40 || param > 0) {
@@ -170,7 +170,7 @@ document.ready(function () {
 
     function workSlider() {
 
-        $('.slider--prev, .slider--next').click(function () {
+        ('.slider--prev, .slider--next').click(function () {
 
             let $this = (this),
                 curLeft = ('.slider').find('.slider--item-left'),
@@ -180,60 +180,60 @@ document.ready(function () {
                 curRight = ('.slider').find('.slider--item-right'),
                 curRightPos = ('.slider').children().index(curRight),
                 totalWorks = ('.slider').children().length,
-                $left = ('.slider--item-left'),
-                $center = ('.slider--item-center'),
-                $right = ('.slider--item-right'),
-                $item = ('.slider--item');
+                left = ('.slider--item-left'),
+                center = ('.slider--item-center'),
+                right = ('.slider--item-right'),
+                item = ('.slider--item');
 
             ('.slider').animate({opacity: 0}, 400);
 
             setTimeout(function () {
 
-                if ($this.hasClass('slider--next')) {
+                if (this.hasClass('slider--next')) {
                     if (curLeftPos < totalWorks - 1 && curCenterPos < totalWorks - 1 && curRightPos < totalWorks - 1) {
-                        $left.removeClass('slider--item-left').next().addClass('slider--item-left');
-                        $center.removeClass('slider--item-center').next().addClass('slider--item-center');
-                        $right.removeClass('slider--item-right').next().addClass('slider--item-right');
+                        left.removeClass('slider--item-left').next().addClass('slider--item-left');
+                        center.removeClass('slider--item-center').next().addClass('slider--item-center');
+                        right.removeClass('slider--item-right').next().addClass('slider--item-right');
                     } else {
                         if (curLeftPos === totalWorks - 1) {
-                            $item.removeClass('slider--item-left').first().addClass('slider--item-left');
-                            $center.removeClass('slider--item-center').next().addClass('slider--item-center');
-                            $right.removeClass('slider--item-right').next().addClass('slider--item-right');
+                            item.removeClass('slider--item-left').first().addClass('slider--item-left');
+                            center.removeClass('slider--item-center').next().addClass('slider--item-center');
+                            right.removeClass('slider--item-right').next().addClass('slider--item-right');
                         } else if (curCenterPos === totalWorks - 1) {
-                            $left.removeClass('slider--item-left').next().addClass('slider--item-left');
-                            $item.removeClass('slider--item-center').first().addClass('slider--item-center');
-                            $right.removeClass('slider--item-right').next().addClass('slider--item-right');
+                            left.removeClass('slider--item-left').next().addClass('slider--item-left');
+                            item.removeClass('slider--item-center').first().addClass('slider--item-center');
+                            right.removeClass('slider--item-right').next().addClass('slider--item-right');
                         } else {
-                            $left.removeClass('slider--item-left').next().addClass('slider--item-left');
-                            $center.removeClass('slider--item-center').next().addClass('slider--item-center');
-                            $item.removeClass('slider--item-right').first().addClass('slider--item-right');
+                            left.removeClass('slider--item-left').next().addClass('slider--item-left');
+                            center.removeClass('slider--item-center').next().addClass('slider--item-center');
+                            item.removeClass('slider--item-right').first().addClass('slider--item-right');
                         }
                     }
                 } else {
                     if (curLeftPos !== 0 && curCenterPos !== 0 && curRightPos !== 0) {
-                        $left.removeClass('slider--item-left').prev().addClass('slider--item-left');
-                        $center.removeClass('slider--item-center').prev().addClass('slider--item-center');
-                        $right.removeClass('slider--item-right').prev().addClass('slider--item-right');
+                        left.removeClass('slider--item-left').prev().addClass('slider--item-left');
+                        center.removeClass('slider--item-center').prev().addClass('slider--item-center');
+                        right.removeClass('slider--item-right').prev().addClass('slider--item-right');
                     } else {
                         if (curLeftPos === 0) {
-                            $item.removeClass('slider--item-left').last().addClass('slider--item-left');
-                            $center.removeClass('slider--item-center').prev().addClass('slider--item-center');
-                            $right.removeClass('slider--item-right').prev().addClass('slider--item-right');
+                            item.removeClass('slider--item-left').last().addClass('slider--item-left');
+                            center.removeClass('slider--item-center').prev().addClass('slider--item-center');
+                            right.removeClass('slider--item-right').prev().addClass('slider--item-right');
                         } else if (curCenterPos === 0) {
-                            $left.removeClass('slider--item-left').prev().addClass('slider--item-left');
-                            $item.removeClass('slider--item-center').last().addClass('slider--item-center');
-                            $right.removeClass('slider--item-right').prev().addClass('slider--item-right');
+                            left.removeClass('slider--item-left').prev().addClass('slider--item-left');
+                            item.removeClass('slider--item-center').last().addClass('slider--item-center');
+                            right.removeClass('slider--item-right').prev().addClass('slider--item-right');
                         } else {
-                            $left.removeClass('slider--item-left').prev().addClass('slider--item-left');
-                            $center.removeClass('slider--item-center').prev().addClass('slider--item-center');
-                            $item.removeClass('slider--item-right').last().addClass('slider--item-right');
+                            left.removeClass('slider--item-left').prev().addClass('slider--item-left');
+                            center.removeClass('slider--item-center').prev().addClass('slider--item-center');
+                            item.removeClass('slider--item-right').last().addClass('slider--item-right');
                         }
                     }
                 }
 
             }, 400);
 
-            $('.slider').animate({opacity: 1}, 400);
+            ('.slider').animate({opacity: 1}, 400);
 
         });
 
@@ -246,9 +246,9 @@ document.ready(function () {
             let textVal = (this).val();
 
             if (textVal === "") {
-                $(this).removeClass('has-value');
+                (this).removeClass('has-value');
             } else {
-                $(this).addClass('has-value');
+                (this).addClass('has-value');
             }
 
             // correct mobile device window position
