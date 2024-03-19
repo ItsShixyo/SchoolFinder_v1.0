@@ -3,7 +3,7 @@ document.addEventListener("scroll", () => {
     //let myLogoTop = myLogo.getBoundingClientRect().top;
 
     let newScale = this.scrollY;
-    newScale = newScale/ 100;
+    newScale = newScale / 100;
 
     if (newScale < 1) {
         newScale = 1;
@@ -12,8 +12,7 @@ document.addEventListener("scroll", () => {
     // Prevent from infinite page
     if (newScale < 30) {
         document.getElementById("scale-up-2").style.transform = `scale(${newScale})`;
-    }
-    else {
+    } else {
         document.getElementById("scale-up-2").style.transform = `scale(0)`;
     }
 
@@ -23,9 +22,9 @@ document.addEventListener("scroll", () => {
     }
 
     let a1 = document.getElementById("first-table");
-    if (a1.getBoundingClientRect().top < 0 && a1.style.borderSpacing.split("px")[0] < 100){
+    if (a1.getBoundingClientRect().top < 0 && a1.style.borderSpacing.split("px")[0] < 100) {
         console.log(a1.style.borderSpacing);
-        document.getElementById("first-table").style.borderSpacing = `${-(a1.getBoundingClientRect().top/5)}px`;
+        document.getElementById("first-table").style.borderSpacing = `${-(a1.getBoundingClientRect().top / 5)}px`;
     }
 
 
@@ -45,8 +44,7 @@ const openNav = () => {
 
     if (sideMenuIsOpen) {
         container.innerHTML = "";  // Clear menu (simulate closing)
-    }
-    else {
+    } else {
 
         // All options available in top menu
         const allOptions = [
