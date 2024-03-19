@@ -11,7 +11,7 @@ window.addEventListener("wheel", (event) => {
         document.querySelector("body").style.overflowY = 'unset';
         if (!pageIsLoaded) {
             const iframe = document.createElement("iframe");
-            iframe.src = "page1.html";
+            iframe.src = "components/page1.html";
             document.querySelector("body").appendChild(iframe);
             pageIsLoaded = true;
         }
