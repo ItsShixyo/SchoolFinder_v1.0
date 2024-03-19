@@ -57,6 +57,10 @@ const openNav = () => {
             {
                 title: "Parcoursup",
                 redirect: "https://parcoursup.gouv.fr"
+            },
+            {
+                title: "Candidature",
+                redirect: "https://epitech.my.site.com/candidature/s/login/SelfRegister?language=fr"
             }
         ];
 
