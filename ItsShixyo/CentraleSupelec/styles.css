@@ -1819,3 +1819,14 @@ body {
     -webkit-transition-delay: .16s;
     transition-delay: .16s
 }
+
+.zoom-label {
+    border-radius: 10px;
+    transition: transform 5s ease, width 5s ease, height 5s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.zoom-label:hover {
+    transform: scale(1.2);
+}
