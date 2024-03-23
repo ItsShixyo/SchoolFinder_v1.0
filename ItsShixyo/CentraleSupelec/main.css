@@ -1775,13 +1775,13 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: -5%;
     -webkit-transform: translate(-50%, -25%);
     transform: translate(-50%, -25%);
-    width: 110%;
+    width: 3%;
     height: 15px;
     opacity: 0;
-    /*background-color: #0f33ff*/
+    background-color: #0f33ff
 }
 
 .outer-nav > li.is-active::before {
