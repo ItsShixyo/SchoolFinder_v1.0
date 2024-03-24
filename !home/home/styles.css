@@ -30,6 +30,17 @@
     font-style: normal
 }
 
+.container {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    margin-left: 20px;
+}
+
+
 pre {
     overflow: auto
 }
@@ -53,7 +64,7 @@ button, select {
     text-transform: none
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="button"] {
     -webkit-appearance: button;
     cursor: pointer
 }
@@ -160,7 +171,7 @@ body {
     color: #fff
 }
 
-.work-request input[type="submit"] {
+.work-request input[type="button"] {
     width: 400px;
     max-width: 100%;
     line-height: 50px;
