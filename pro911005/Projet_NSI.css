@@ -1,0 +1,113 @@
+body {
+	background: black;
+}
+
+.balise1 {
+    border: 8px ridge #00008b;
+	background: linear-gradient(blue,#add8e6);
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	float: center;
+	margin-left: 500px; 
+    margin-right: 500px;
+}
+
+.balise1 h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family:arial;
+	font-weight: 600;
+}
+
+.balise2 {
+	border: 5px ridge #00008b;
+	background: linear-gradient(blue,#add8e6);
+	padding: 1em;
+	padding-bottom: 15px;
+	margin-left: 200px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	width: 750px;
+	height: 580px;
+}
+.balise2 img {
+	width: 90%;
+	height: 90%;
+	transition: all 0.25s;
+	padding: 2em;
+}
+	
+.balise2 p {
+	text-align: center;
+	font-family: arial;
+	font-size: 30px;
+}
+
+.balise2 img:hover {
+	transform: rotate(-5deg) scale(0.85);
+}
+
+.balise3  {
+	background: linear-gradient(blue,black);
+	float: right;
+	border: 5px ridge #add8e6;
+	margin-right: 150px;
+	margin-top: 100px;
+    height: 550px;
+	width: 500px;
+}
+
+.balise3 p {
+	font-family: arial;
+	font-size: 28px;
+	color: white;
+}
+	
+.balise4 {
+	border: 7px ridge #add8e6;
+	background: linear-gradient(blue,black);
+	float: left;
+	margin-top: 75px;
+	margin-left: 55px;
+	padding: 1em;
+	width: 900px;
+	height: 600px;
+}
+
+.balise4 img {
+	width: 87.5%;
+	height: 87.5%;
+	padding-left: 50px;
+	transition: all 0.25s;
+}
+
+.balise4 p {
+	color: white;
+	font-family: arial;
+	font-size: 25px;
+	text-align: center;
+}
+
+.balise4 img:hover {
+	transform: rotate(5deg) scale(0.8);
+}
+
+.nom {
+	border: 5px ridge white;
+	float: right;
+	margin-top: 400px;
+	margin-right: 150px;
+}
+
+.nom p {
+	color: white;
+	font-family: arial;
+	font-size:40px;
+}
+	
+
+	
+	
+
