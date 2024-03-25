@@ -23,7 +23,7 @@ body {
 .balise2 {
 	border: 5px ridge #00008b;
 	background: linear-gradient(blue,#add8e6);
-	padding: 1em;
+	padding: 5em;
 	padding-bottom: 15px;
 	margin-left: 200px;
 	float: left;
@@ -104,8 +104,15 @@ body {
 	font-family: arial;
 	font-size:40px;
 }
-	
 
-	
-	
+#texte0 {
+	color: white;
+	font-size: 30px;
+}
 
+#nom-du-site {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
