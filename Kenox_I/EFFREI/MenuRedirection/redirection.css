@@ -40,7 +40,7 @@
     justify-content: space-around;
 }
 
-#div2{
+.div2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,7 +49,7 @@
     height: 150px;
 }
 
-#text{
+.text{
     border: 3px solid rgb(255, 255, 255);
     color: white; 
     font-size: 300%; 
